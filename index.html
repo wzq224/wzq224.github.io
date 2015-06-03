@@ -31,20 +31,17 @@
         </h3>
 
 
-<div id="SOHUCS"></div>
-<script>
+<script type="text/javascript">
 (function(){
-var appid = 'cyrNJN9RU',
-conf = 'prod_8beee6fc6980c8dd4e00e315c521a086';
-var doc = document,
-s = doc.createElement('script'),
-h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
-s.type = 'text/javascript';
-s.charset = 'utf-8';
-s.src = 'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
-h.insertBefore(s,h.firstChild);
-window.SCS_NO_IFRAME = true;
-})()
+var url = "http://widget.weibo.com/distribution/comments.php?width=0&url=http%3A%2F%2Fopen.weibo.com%2Fwidget%2Fcomments.php&appkey=2513074491&dpc=1";
+document.write('<iframe id="WBCommentFrame" src="' + url + '" scrolling="no" frameborder="0" style="width:100%"></iframe>');
+})();
+</script>
+<script src="http://tjs.sjs.sinajs.cn/open/widget/js/widget/comment.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+window.WBComment.init({
+    "id": "WBCommentFrame"
+});
 </script>
       </section>
     </div>
